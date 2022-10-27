@@ -1,2 +1,2 @@
 <h1>Palvelinten hallinta</h1>
-<a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h1-Hello-Salt"> tehtävät </a>
+<a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h1-Hello-Salt"> h1 Hello Salt </a>

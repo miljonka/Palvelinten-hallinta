@@ -1,4 +1,4 @@
-Lähdin seuraavien harjoitusten tekemiseen Tero Karvisen 10.11.2022 pidetyn Palvelinten hallinta -oppitunnin pohjalta. Apuna muistiinpanot ja aiemmin tunnilla tehdyt tehtävät. Harjoituksissa käytin VirtualBoxin kautta Ubuntu Desktoppia(22.04.1 LTS). Tämä tehtäväraportti on tehty MarkDownina.
+Lähdin seuraavien harjoitusten tekemiseen Tero Karvisen 10.11.2022 pidetyn Palvelinten hallinta -oppitunnin pohjalta. Apuna muistiinpanot ja aiemmin tunnilla tehdyt tehtävät. Harjoituksissa käytin VirtualBoxin kautta Ubuntu Desktoppia(22.04.1 LTS) ja Ubuntu Serveriä(22.04.1 LTS) vapaahtoisissa tehtävissä. Tämä tehtäväraportti on tehty MarkDownina.
 
 ### b) Offline. Tee paikallinen offline-varasto git:llä. Varaston nimessä tulee olla sana "cat" (kissa). Aiemmin tehty varasto ei siis kelpaa. Aseta itsellesi sähköpostiosoite ja nimi. Näytä varastollasi muutosten teko ja niiden katsominen lokista.
 
@@ -102,3 +102,67 @@ Kaikki näytti olevan kunnossa, joten menin katsomaan GitHubin sivulle olivatko 
 ![21](https://user-images.githubusercontent.com/112076418/201366907-42282c4f-daf1-4a9f-967c-8088eefa6d37.png)
 
 Muutokset näkyvät sivulla, sekä commitin tekijä.
+
+### f) Vapaaehtoinen: Tee uusi salt-moduli. Voit asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot. (Tietysti eri ohjelma kuin aiemmissa tehtävissä, tarkoitushan on harjoitella Salttia)
+
+
+Aikaisemmassa tehtävässä konfiguroin apachen asetuksineen, joten tässä valitsin demoniksi SSH:n.
+Tässä tehtävässä käytin VirtualBoxin kautta Ubuntu Serveriä, jossa aiemmat salt harjoituksetkin olin tehnyt. Tarkoituksena oli muodostaa onnistuneesti ssh yhteys UbuntuDesktoppiin, joka aikaisemmin oli jo konfiguroitu Serverin minioniksi.
+
+Lähdin luomaan /srv/salt kansion sisälle uuden kansion nimeltä ssh. Kansioon lisäsin init.sls tiedoston, jonka sisälle ssh:n asetukset. Tilan tarkoituksena oli katsoa, että ssh on asennettu ja, että se on päällä. Kaikki asetukset tulevat salt-masterin sshd_configista.
+
+![22](https://user-images.githubusercontent.com/112076418/201522940-8ce1aecc-251f-488f-adb6-71456c689f0b.png) 
+
+![23](https://user-images.githubusercontent.com/112076418/201523157-98ad7581-27ce-4c20-95a6-37812be0ab3b.png)
+
+
+Sitten täytyi vielä lisätä itse sshd_config tiedosto /srv/salt/ssh kansioon. Tämä onnistui kopioimalla /etc/ssh/sshd_config kyseiseen kansioon.
+`sudo cp /etc/ssh/sshd_config /srv/salt/ssh`
+
+![24](https://user-images.githubusercontent.com/112076418/201523162-3c48128d-ccbd-4f6b-be2f-45b7434d1754.png)
+
+Muutin vielä testimielessä oletusportin portiksi 8888 ja poistamalla risuaidan portin edestä, jotta asetus tulisi voimaan.
+
+![25](https://user-images.githubusercontent.com/112076418/201523428-1e199a3a-0e36-48a9-8947-19577f01d623.png)
+
+Kokeilin tässä välissä ottaa yhteyden toiseen uunituoreeseen minion koneeseeni (Ubuntu Desktop). Oletuksena tietysti se, että mitään ei tapahdu ja niin kävikin: 
+
+![26](https://user-images.githubusercontent.com/112076418/201523816-d0698b35-1699-404f-aa6c-9092e5d80823.png)
+
+Sitten kokeilin aktivoida ssh tilan kaikille minioneille komennolla: `sudo salt '*' state.apply ssh`
+
+![27](https://user-images.githubusercontent.com/112076418/201523906-9ec72ed2-057a-4145-947e-3c8358e99a10.png)
+
+Kaikki näytti menevän ykkösellä purkkiin, joten kokeilin uudestaan yhdistämistä: `ssh -p 8888 miika@192.168.10.7`
+
+![28 ](https://user-images.githubusercontent.com/112076418/201524387-9ab5b301-08f2-4afb-9ebf-5dc5fe82c698.png)
+
+Onnistui!
+
+g) Vapaaehtoinen: Laita salt gittiin. Tee uusi moduli. Kloonaa varastosi toiselle koneelle (tai poista srv/salt ja palauta se kloonaamalla) ja jatka sillä. (Salt tiedostot mistä vain hakemistosta, huomaa suhteellinen polku: 'sudo salt-call --local --file-root srv/salt/ state.apply')
+
+Päätin tehdä gittiin yksinkertaisen tilan, joka luo vieraskäyttäjän ilman salasanaa, ja vieraskäyttäjän työpöydälle tiedoston "testi", jonka sisältönä on teksti "Testi is testi"
+
+![git init sls](https://user-images.githubusercontent.com/112076418/201546601-a1f61ed7-73b1-4838-9747-fccb34e3a4c1.png)
+
+![git](https://user-images.githubusercontent.com/112076418/201546687-36de3668-39c4-4715-b963-f4e53bae9f65.png)
+
+Aloitin kokeilulla vaihtaa käyttäjää: `su vieras`
+
+![34](https://user-images.githubusercontent.com/112076418/201546802-2bb847fc-134a-4570-bfbf-a100f3b6bd08.png)
+
+Eipä tietenkään toiminut. Jatkoin kloonaamalla äsken tekemäni Git varaston: `git@github.com:miljonka/srv.git`
+
+![srv](https://user-images.githubusercontent.com/112076418/201547035-797cf2e2-3bdf-4d34-a7ef-d573141514d3.png)
+
+Sitten kokeilin aktivoida tilan komennolla: `sudo salt-call --local --file-root srv/salt/ state.apply vieras`
+
+![saltcall](https://user-images.githubusercontent.com/112076418/201547162-77291dd0-5e3d-42a6-9bd8-4718b373d04e.png)
+
+Kaikki näytti olevan OK, joten kokeilin uudestaan vaihtaa käyttäjää komennolla: `su vieras`
+
+![suveras](https://user-images.githubusercontent.com/112076418/201547296-4e6e6d72-4435-413d-9169-d9fdae2eecd7.png)
+
+Pääsin vaihtamaan vieraskäyttäjälle ja testikin löytyi! 
+
+

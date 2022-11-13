@@ -165,4 +165,6 @@ Kaikki näytti olevan OK, joten kokeilin uudestaan vaihtaa käyttäjää komenno
 
 Pääsin vaihtamaan vieraskäyttäjälle ja testikin löytyi! 
 
+### Lähteet
 
+Karvinen, Tero: Kolmas opetuskerta 2022-11-03, Palvelinten hallinta -kurssi https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/?from=MoodleNews

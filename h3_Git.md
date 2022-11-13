@@ -139,7 +139,7 @@ Kaikki näytti menevän ykkösellä purkkiin, joten kokeilin uudestaan yhdistäm
 
 Onnistui!
 
-g) Vapaaehtoinen: Laita salt gittiin. Tee uusi moduli. Kloonaa varastosi toiselle koneelle (tai poista srv/salt ja palauta se kloonaamalla) ja jatka sillä. (Salt tiedostot mistä vain hakemistosta, huomaa suhteellinen polku: 'sudo salt-call --local --file-root srv/salt/ state.apply')
+### g) Vapaaehtoinen: Laita salt gittiin. Tee uusi moduli. Kloonaa varastosi toiselle koneelle (tai poista srv/salt ja palauta se kloonaamalla) ja jatka sillä. (Salt tiedostot mistä vain hakemistosta, huomaa suhteellinen polku: 'sudo salt-call --local --file-root srv/salt/ state.apply')
 
 Päätin tehdä gittiin yksinkertaisen tilan, joka luo vieraskäyttäjän ilman salasanaa, ja vieraskäyttäjän työpöydälle tiedoston "testi", jonka sisältönä on teksti "Testi is testi". Apuna käytin [SaltStackin ohjeita](https://docs.saltproject.io/en/3000/ref/states/all/salt.states.user.html) käyttäjän luomiseen. 
 

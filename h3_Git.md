@@ -141,7 +141,7 @@ Onnistui!
 
 g) Vapaaehtoinen: Laita salt gittiin. Tee uusi moduli. Kloonaa varastosi toiselle koneelle (tai poista srv/salt ja palauta se kloonaamalla) ja jatka sillä. (Salt tiedostot mistä vain hakemistosta, huomaa suhteellinen polku: 'sudo salt-call --local --file-root srv/salt/ state.apply')
 
-Päätin tehdä gittiin yksinkertaisen tilan, joka luo vieraskäyttäjän ilman salasanaa, ja vieraskäyttäjän työpöydälle tiedoston "testi", jonka sisältönä on teksti "Testi is testi"
+Päätin tehdä gittiin yksinkertaisen tilan, joka luo vieraskäyttäjän ilman salasanaa, ja vieraskäyttäjän työpöydälle tiedoston "testi", jonka sisältönä on teksti "Testi is testi". Apuna käytin [SaltStackin ohjeita](https://docs.saltproject.io/en/3000/ref/states/all/salt.states.user.html) käyttäjän luomiseen. 
 
 ![git init sls](https://user-images.githubusercontent.com/112076418/201546601-a1f61ed7-73b1-4838-9747-fccb34e3a4c1.png)
 
@@ -168,3 +168,5 @@ Pääsin vaihtamaan vieraskäyttäjälle ja testikin löytyi!
 ### Lähteet
 
 Karvinen, Tero: Kolmas opetuskerta 2022-11-03, Palvelinten hallinta -kurssi https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/?from=MoodleNews
+
+SaltStack. SALT.STATES.USER https://docs.saltproject.io/en/3000/ref/states/all/salt.states.user.html

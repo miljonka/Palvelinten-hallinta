@@ -2,7 +2,7 @@ Lähdin seuraavien harjoitusten tekemiseen Tero Karvisen 10.11.2022 pidetyn Palv
 
 ### b) Offline. Tee paikallinen offline-varasto git:llä. Varaston nimessä tulee olla sana "cat" (kissa). Aiemmin tehty varasto ei siis kelpaa. Aseta itsellesi sähköpostiosoite ja nimi. Näytä varastollasi muutosten teko ja niiden katsominen lokista.
 
-Aloitin offline-varaston luomisen luomalla kotihakemistoon git varaston "cat<dog" komennolla: `git init "cat<dog"`. 
+Aloitin offline-varaston luomisen luomalla kotihakemistoon git varaston "cat>dog" komennolla: `git init "cat>dog"`. 
 
 ![1](https://user-images.githubusercontent.com/112076418/201332468-00ad65c0-aeeb-48ad-a935-8ab731ec1a51.png)
 

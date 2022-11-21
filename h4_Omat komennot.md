@@ -439,7 +439,7 @@ Palvelinten hallinta - kevään 2021 "Krister" nimimerkin oma moduuli:
 Adblockin asennus Firefoxiin, BleachBit siivioushojelman ja Thunderbird sähköpostisovelluksen asennus saltilla. Projektissa jonkin verran erroria ja virhetilanteita, eikä lopputulos kuulemma ollut haluttu tekijän mukaan, mutta koko prosessi oli hyvin raportoitu ja maaliin päästiin!
 
 
-**e) Lukua, ei luottamusta. Kokeile yhtä kohdassa d-Intel löytämääsi modulia koneella. Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.**
+### e) Lukua, ei luottamusta. Kokeile yhtä kohdassa d-Intel löytämääsi modulia koneella. Tämä on infraa koodina, joten luottamusta ei tarvita. Voit lukea koodista, mitä olet ajamassa.
 
 Päätin kokeilla "myllys" nimimerkin [Steam](https://myllys.wordpress.com/palvelinten-hallinta-harjoitus-7-oma-moduli-spring-2021/) asennus modulia. Menin linkissä olevalle sivulle ja sieltä linkillä modulin github sivulle: https://github.com/myllys/moduuli.
 

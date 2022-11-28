@@ -243,7 +243,9 @@ Kyllä vain! Sain asennettua VLCn ja geditin Ubuntulla salt tilan avulla Windows
 
 ![molemmat](https://user-images.githubusercontent.com/112076418/204159545-e8a4b252-8a63-4be7-9852-be773c905b69.png)
 
-### Lähteet 
+### Lähteet
+
+Tero Karvinen, [Palvelinten hallinta](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/?from=MoodleNews)
 
 Tero Karvinen, [Control Windows with Salt](https://terokarvinen.com/2018/control-windows-with-salt/)
 

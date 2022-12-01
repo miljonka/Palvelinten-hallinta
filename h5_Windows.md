@@ -2,7 +2,7 @@ Lähdin seuraavien harjoitusten tekemiseen Tero Karvisen 24.11.2022 pidetyn Palv
 
 ### a) Hello Window Salt! Tee Windowsille SLS-tiedostoon Salt-tila, joka tekee tiedoston nimeltä "suolaikkuna.txt".
 
-Tämän tyyppiinen tehtävä tulikin jo kurssin ensimmäisellä viikolla tehtyä (h1 Hello Salt), mutta ympäristönä toimi silloin Ubuntu (Linux). Lähdin tekemään tehtävää jotakuinkin samalla periaatteella kuin tein [h1_Hello Salt, b) kohdassa.](https://github.com/miljonka/Palvelinten-hallinta/blob/main/h1_Hello%20Salt.md) Tämä tehtävä oli tehty Windowsin PowerShellillä.
+Tämän tyyppiinen tehtävä tulikin jo kurssin ensimmäisellä viikolla tehtyä (h1 Hello Salt), mutta ympäristönä toimi silloin Ubuntu (Linux). Lähdin tekemään tehtävää jotakuinkin samalla periaatteella kuin tein [h1_Hello Salt](https://github.com/miljonka/Palvelinten-hallinta/blob/main/h1_Hello%20Salt.md) b) kohdassa. Tämä tehtävä oli tehty Windowsin PowerShellillä.
 
 Aloitin luomalla "temp" kansion, jonne laitan kaikki tulostukset ja testitiedostot näistä tehtävistä. Tein kansion temp C: aseman juureen komennolla: `mkdir temp`
 

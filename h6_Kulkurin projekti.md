@@ -1,4 +1,3 @@
-[
 ### x) Lue ja tiivistä (muutamalla ranskalaisella viivalla per artikkeli, poimi esim itsellesi keskeisimmät komennot)
 
 **[Karvinen 2017: Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)**
@@ -230,7 +229,7 @@ Orja vastasi käskyihin ja nyt renki1 oli onnistuneesti isännän orja.
 
 ### d) Oma suola. Tee ensimmäinen työversio projektistasi. Miniprojektilla tulee olla jokin tarkoitus, vaikka se olisi keksitty. Projektilla tulee olla sivu (esim. Github, Gitlab...), josta selviää projektin perustiedot. Toiminnallisuutta tulee olla kokeiltu, mutta sen ei tarvitse olla valmis. Valmiit projektit esitellään viimeisellä tapaamiskerralla. Tässä tehtävässä palautettava työversio ei siis ole vielä lopullinen.
 
-Coming soon
+Work in Progress: [Projekti](https://github.com/miljonka/miniproject/blob/main/README.md)
 
 ### Lähteet
 
@@ -241,4 +240,3 @@ Coming soon
 [Karvinen 2021: Two Machine Virtual Network With Debian 11 Bullseye and Vagrant ](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/)
 
 [Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux](https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/)
-](https://github.com/miljonka/Palvelinten-hallinta/wiki/h6_Kulkurin-projekti)

@@ -1,4 +1,4 @@
-
+[
 ### x) Lue ja tiivistä (muutamalla ranskalaisella viivalla per artikkeli, poimi esim itsellesi keskeisimmät komennot)
 
 **[Karvinen 2017: Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)**
@@ -241,3 +241,4 @@ Coming soon
 [Karvinen 2021: Two Machine Virtual Network With Debian 11 Bullseye and Vagrant ](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/)
 
 [Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux](https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/)
+](https://github.com/miljonka/Palvelinten-hallinta/wiki/h6_Kulkurin-projekti)

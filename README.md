@@ -13,4 +13,5 @@ Linkit tehtäviin alla.
 <a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h3_Git"> h3_Git </a> \
 <a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h4_Omat-komennot"> h4_Omat komennot <a/> \
 <a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h5_Windows"> h5_Windows <a/> \
-<a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h6_Kulkurin-projekti"> h6_Kulkurin projekti <a/>
+<a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h6_Kulkurin-projekti"> h6_Kulkurin projekti <a/> \
+<a href="https://github.com/miljonka/Palvelinten-hallinta/wiki/h7_Oma-projekti"> h7_Oma-projekti<a/>

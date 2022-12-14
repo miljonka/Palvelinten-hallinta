@@ -15,3 +15,5 @@ Linkit tehtäviin alla.
 [h5_Windows](https://github.com/miljonka/Palvelinten-hallinta/wiki/h5_Windows) \
 [h6_Kulkurin projekti](https://github.com/miljonka/Palvelinten-hallinta/wiki/h6_Kulkurin-projekti) \
 [h7_Oma-projekti](https://github.com/miljonka/Palvelinten-hallinta/wiki/h7_Oma-projekti)
+
+[h7_miniprojektin](https://github.com/miljonka/miniproject) repository
